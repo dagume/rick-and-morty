@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development"
   },
   "author": "@dagume",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "5.1.1",
     "html-webpack-plugin": "^4.3.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
